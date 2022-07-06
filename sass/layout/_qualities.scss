@@ -1,13 +1,9 @@
-
 .qualities-list {
+  gap: 30px;
+  width: 100%;
   display: flex;
-  
-  column-gap: 30px;
+  flex-wrap: wrap;
 
-  &__item {
-   
-    flex-basis: calc((100% - 3 * 30px) / 4);
-  }
   &__icon {
     display: flex;
     width: 100%;
@@ -15,21 +11,37 @@
     margin-bottom: 30px;
     background-color: rgba(245, 244, 250, 1);
     border-radius: 4px;
+
     justify-content: center;
-    
     align-items: center;
   }
-
   &__title {
-    color: var(--sec-title-color);
-    line-height: 1.14;
-
-    text-transform: uppercase;
     margin-bottom: 10px;
+    color: var(--sec-title-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &__text {
     color: var(--paragraph-text);
     line-height: 1.71;
+  }
+
+  @include tablet {
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__title {
+      text-align: start;
+    }
+  }
+
+  @include desktop {
+    &__item {
+      flex-basis: calc((100% - 3 * 30px) / 4);
+    }
   }
 }
