@@ -471,10 +471,6 @@ body {
 
 .team {
   background-color: rgb(245, 244, 250);
-  gap: 30px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 .team__title {
   color: var(--sec-title-color);
@@ -484,12 +480,27 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
 
+.team-list {
+  gap: 30px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
 .team-list__item {
   background-color: rgb(255, 255, 255);
   padding-bottom: 24px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  outline: 1px solid orange;
 }
 .team-list__img {
   margin-bottom: 30px;
@@ -509,9 +520,21 @@ body {
   margin-bottom: 16px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .team-list__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-list__item {
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 90px) / 4);
+    padding-bottom: 30px;
+  }
+}
 
 .team__soc-block {
-  display: block;
+  /* display: block;
   /*padding: 0 122px;*/
 }
 .team__soc-block .soc-list {
