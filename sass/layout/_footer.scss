@@ -3,70 +3,70 @@
   margin: 0 auto;
   padding: 60px 0;
 }
-.footer-page__blocks {
-  display: flex;
-  align-items: baseline;
-}
-.footer-block__address {
-  margin-right: 70px;
-  width: 231px;
-  /*padding: 60px 0;*/
-  /*outline: 1px solid green;*/
-}
-.footer-address-block__logo {
-  display: block;
-  margin-bottom: 20px;
-}
+//.footer-page__blocks {
+//  display: flex;
+//  align-items: baseline;
+//}
+//.footer-block__address {
+//  margin-right: 70px;
+//  width: 231px;
+//  /*padding: 60px 0;*/
+//  /*outline: 1px solid green;*/
+//}
+//.footer-address-block__logo {
+//  display: block;
+//  margin-bottom: 20px;
+//}
 
-.footer-contacts__item:not(:last-child) {
-  margin-bottom: 9px;
-}
+//.footer-contacts__item:not(:last-child) {
+//  margin-bottom: 9px;
+//}
 
-.footer-contacts__adress {
-  color: rgba(255, 255, 255, 1);
-  font-style: normal;
-  line-height: 1.71;
+//.footer-contacts__adress {
+//  color: rgba(255, 255, 255, 1);
+//  font-style: normal;
+//  line-height: 1.71;
+//
+//  @include transitions(color);
+//  &:hover,
+//  &:focus {
+//    color: var(--accent-color);
+//  }
+//}
+//.footer-contacts__email,
+//.footer-contacts__tel {
+//  color: rgba(255, 255, 255, 0.6);
+//  font-style: normal;
+//  line-height: 1.71;
+//
+// @include transitions(color);
 
-  @include transitions(color);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
-.footer-contacts__email,
-.footer-contacts__tel {
-  color: rgba(255, 255, 255, 0.6);
-  font-style: normal;
-  line-height: 1.71;
-
-  @include transitions(color);
-
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
+//  &:hover,
+//  &:focus {
+//    color: var(--accent-color);
+//  }
+//}
 
 /* --- Footer join + soc links ---- */
-.footer-block__social {
-  margin-right: auto;
-  /* outline: 1px solid green;*/
-}
+//.footer-block__social {
+//  margin-right: auto;
+/* outline: 1px solid green;*/
+//}
 
-.footer-block__title {
-  margin-bottom: 20px;
-  color: rgba(255, 255, 255, 1);
-
-  font-weight: 700;
-
-  line-height: 1.14;
-
-  text-transform: uppercase;
-}
+//.footer-block__title {
+//  margin-bottom: 20px;
+//  color: rgba(255, 255, 255, 1);
+//
+//  font-weight: 700;
+//
+//  line-height: 1.14;
+//
+//  text-transform: uppercase;
+//}
 
 /* ---mailing block----*/
 
-.footer-mailing__text {
+/*.footer-mailing__text {
   margin-bottom: 20px;
   font-weight: 700;
 
@@ -117,3 +117,4 @@
 .footer-mailing__icon {
   margin-left: 10px;
 }
+*/
