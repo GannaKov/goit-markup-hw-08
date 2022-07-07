@@ -1,26 +1,44 @@
 .clients {
   background-color: rgba(255, 255, 255, 1);
   &-title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     text-align: center;
 
     color: var(--title-color);
   }
+
+  @include desktop {
+    &-title {
+      margin-bottom: 50px;
+
+      font-size: 36px;
+      line-height: 1.17;
+    }
+  }
 }
 
 .clients-list {
+  /*display: flex;
+  margin: 0 -15px 0;*/
+  gap: 30px;
+  width: 100%;
   display: flex;
-  margin: 0 -15px 0;
+  flex-wrap: wrap;
 }
 .clients-list__item {
   display: flex;
-  flex-basis: calc((100% - 180px) / 6);
-  margin: 0 15px;
+  flex-basis: calc((100% - 30px) / 2);
+
   background-color: rgb(255, 255, 255);
+  @include tablet {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
+  @include desktop {
+    flex-basis: calc((100% - 5 * 30px) / 6);
+  }
 }
 .clients-list__icon {
   fill: currentColor;

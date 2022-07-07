@@ -541,81 +541,47 @@ body {
   justify-content: center;
 }
 
-/*{
-  background-color: rgba(245, 244, 250, 1);
-
-  &__title {
-    color: var(--title-color);
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-
-    margin-bottom: 50px;
-  }
-}
-.team-list {
-  display: flex;
-  &__item {
-    background-color: rgba(255, 255, 255, 1);
-    flex-basis: calc((100% - 3 * 30px) / 4);
-    padding-bottom: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
-
-  &__img {
-    margin-bottom: 30px;
-  }
-  &__title {
-    color: var(--sec-title-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-
-    text-align: center;
-
-    margin-bottom: 10px;
-  }
-  &__text {
-    color: var(--paragraph-text);
-    font-size: 16px;
-    line-height: 1.19;
-    margin-bottom: 16px;
-
-    text-align: center;
-  }
-}
-.team__soc-block {
-  display: block;
-  padding: 0 32px;
-}
-*/
 .clients {
   background-color: rgb(255, 255, 255);
 }
 .clients-title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   color: var(--title-color);
 }
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
 
 .clients-list {
+  /*display: flex;
+  margin: 0 -15px 0;*/
+  gap: 30px;
+  width: 100%;
   display: flex;
-  margin: 0 -15px 0;
+  flex-wrap: wrap;
 }
 
 .clients-list__item {
   display: flex;
-  flex-basis: calc((100% - 180px) / 6);
-  margin: 0 15px;
+  flex-basis: calc((100% - 30px) / 2);
   background-color: rgb(255, 255, 255);
+}
+@media screen and (min-width: 768px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-list__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
 
 .clients-list__icon {
