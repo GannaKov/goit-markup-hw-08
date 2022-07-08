@@ -2,6 +2,9 @@
   background-color: var(--hero-footer-color);
   margin: 0 auto;
   padding: 60px 0;
+  // @include tablet {
+  //   padding: 60px 89px 60px 76px;
+  // }
 }
 .footer-page__blocks {
   outline: 1px solid green;
@@ -9,6 +12,15 @@
   flex-direction: column;
   align-items: center;
 }
+@include tablet {
+  .footer-page__tab-block {
+    display: flex;
+    outline: 1px solid yellow;
+    margin-bottom: 60px;
+    align-items: baseline;
+  }
+}
+
 .footer-address-block__logo {
   margin-bottom: 20px;
 }
@@ -18,6 +30,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 165px;
+  }
 }
 .footer-contacts {
   display: flex;
@@ -54,6 +70,9 @@
 .footer-block__social {
   margin-bottom: 60px;
   outline: 1px solid red;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .footer-block__title {
@@ -72,6 +91,9 @@
   outline: 1px solid red;
 
   width: 100%;
+  @include tablet {
+    max-width: 450px;
+  }
 }
 .footer-mailing__text {
   text-align: center;

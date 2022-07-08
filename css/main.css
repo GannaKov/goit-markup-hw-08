@@ -625,6 +625,14 @@ body {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer-page__tab-block {
+    display: flex;
+    outline: 1px solid yellow;
+    margin-bottom: 60px;
+    align-items: baseline;
+  }
+}
 .footer-address-block__logo {
   margin-bottom: 20px;
 }
@@ -635,6 +643,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-block__address {
+    margin-bottom: 0;
+    margin-right: 165px;
+  }
 }
 
 .footer-contacts {
@@ -678,6 +692,11 @@ body {
   margin-bottom: 60px;
   outline: 1px solid red;
 }
+@media screen and (min-width: 768px) {
+  .footer-block__social {
+    margin-bottom: 0;
+  }
+}
 
 .footer-block__title {
   text-align: center;
@@ -691,6 +710,11 @@ body {
 .footer-block__mailing {
   outline: 1px solid red;
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .footer-block__mailing {
+    max-width: 450px;
+  }
 }
 
 .footer-mailing__text {
