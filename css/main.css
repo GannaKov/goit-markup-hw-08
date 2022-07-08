@@ -624,6 +624,12 @@ body {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-page__blocks {
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .footer-page__tab-block {
@@ -633,6 +639,13 @@ body {
     align-items: baseline;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-page__tab-block {
+    margin-right: auto;
+    margin-bottom: auto;
+  }
+}
+
 .footer-address-block__logo {
   margin-bottom: 20px;
 }
@@ -650,11 +663,22 @@ body {
     margin-right: 165px;
   }
 }
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-block__address {
+    margin-right: 70px;
+    align-items: flex-start;
+  }
+}
 
 .footer-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    align-items: flex-start;
+  }
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -698,6 +722,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-mailing__field {
+    display: flex;
+  }
+}
+
 .footer-block__title {
   text-align: center;
   margin-bottom: 20px;
@@ -705,6 +735,11 @@ body {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .footer-block__title {
+    text-align: start;
+  }
 }
 
 .footer-block__mailing {
@@ -716,6 +751,11 @@ body {
     max-width: 450px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-block__mailing {
+    max-width: 570px;
+  }
+}
 
 .footer-mailing__text {
   text-align: center;
@@ -724,6 +764,11 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--btn-text);
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing__text {
+    text-align: start;
+  }
 }
 
 .footer-mailing__imput {
@@ -751,6 +796,13 @@ body {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 1200px) {
+  .footer-mailing__imput {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
 .footer-mailing__btn {
