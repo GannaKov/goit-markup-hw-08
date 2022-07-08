@@ -1,5 +1,6 @@
 .hero {
   margin: 0 auto;
+  padding: 118px 0;
   background-size: cover;
   background-color: rgba(196, 196, 196, 1);
   background-image: linear-gradient(
@@ -8,6 +9,7 @@
     ),
     url(../images/hero_mob.jpg);
   background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
@@ -24,11 +26,9 @@
   }
 
   @include mobile {
-    padding: 118px 0;
   }
 
   @include tablet {
-    padding: 118px 0;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -88,6 +88,7 @@
   color: rgba(255, 255, 255, 1);
 
   @include desktop {
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }

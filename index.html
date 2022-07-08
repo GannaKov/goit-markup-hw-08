@@ -160,9 +160,12 @@
           <ul class="dealing-list list">
             <li class="dealing-list__item">
               <img
+                srcset="
+                  ./images/we-do1_desktop.jpg    1x,
+                  ./images/we-do1_desktop@2x.jpg 2x
+                "
                 src="./images/we-do1_desktop.jpg"
                 alt="Десктопные приложения"
-                srcset="./images/we-do1_desktop@2x.jpg 2x"
                 width="370"
               />
               <div class="dealing-list__overlay">
@@ -171,22 +174,30 @@
             </li>
             <li class="dealing-list__item">
               <img
+                srcset="
+                  ./images/we-do2_desktop.jpg    1x,
+                  ./images/we-do2_desktop@2x.jpg 2x
+                "
                 src="./images/we-do2_desktop.jpg"
                 alt="Разработка мобильных приложений"
-                srcset="./images/we-do2_desktop@2x.jpg 2x"
                 width="370"
               />
+
               <div class="dealing-list__overlay">
                 <p class="dealing-list__text">Мобильные приложения</p>
               </div>
             </li>
             <li class="dealing-list__item">
               <img
+                srcset="
+                  ./images/we-do3_desktop.jpg    1x,
+                  ./images/we-do3_desktop@2x.jpg 2x
+                "
                 src="./images/we-do3_desktop.jpg"
                 alt="Разработка дизайна вебсайта"
-                srcset="./images/we-do3_desktop@2x.jpg 2x"
-                width="100%"
+                width="370"
               />
+
               <div class="dealing-list__overlay">
                 <p class="dealing-list__text">Дизайнерские решения</p>
               </div>
@@ -204,13 +215,32 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/staff1_mob.jpg"
-                srcset="./images/staff1_mob@2x.jpg 2x"
-                alt="Игорь Демьяненко"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff1_desk.jpg    1x,
+                    ./images/staff1_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)" />
+                <source
+                  srcset="
+                    ./images/staff1_tab.jpg    1x,
+                    ./images/staff1_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="
+                    ./images/staff1_mob.jpg    1x,
+                    ./images/staff1_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)" />
+                <img
+                  class="team-list__img"
+                  src="./images/staff1_mob@2x.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+              /></picture>
+
               <h3 class="team-list__title">Игорь Демьяненко</h3>
               <p class="team-list__text" lang="en">Product Designer</p>
               <div class="team__soc-block">
@@ -264,13 +294,36 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/staff2_mob.jpg"
-                srcset="./images/staff2_mob@2x.jpg 2x"
-                alt="Ольга Репина"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff2_desk.jpg    1x,
+                    ./images/staff2_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff2_tab.jpg    1x,
+                    ./images/staff2_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff2_mob.jpg    1x,
+                    ./images/staff2_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/staff2_mob@2x.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                />
+              </picture>
+
               <h3 class="team-list__title">Ольга Репина</h3>
               <p class="team-list__text" lang="en">Frontend Developer</p>
               <div class="team__soc-block">
@@ -324,13 +377,35 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/staff3_mob.jpg"
-                srcset="./images/staff3_mob@2x.jpg 2x"
-                alt="Николай Тарасов"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff3_desk.jpg    1x,
+                    ./images/staff3_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff3_tab.jpg    1x,
+                    ./images/staff3_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff3_mob.jpg    1x,
+                    ./images/staff3_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/staff3_mob@2x.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                />
+              </picture>
               <h3 class="team-list__title">Николай Тарасов</h3>
               <p class="team-list__text" lang="en">Marketing</p>
               <div class="team__soc-block">
@@ -384,13 +459,35 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img
-                class="team-list__img"
-                src="./images/staff4_mob.jpg"
-                srcset="./images/staff4_mob@2x.jpg 2x"
-                alt="Михаил Ермаков"
-                width="100%"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/staff4_desk.jpg    1x,
+                    ./images/staff4_desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff4_tab.jpg    1x,
+                    ./images/staff4_tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/staff4_mob.jpg    1x,
+                    ./images/staff4_mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  class="team-list__img"
+                  src="./images/staff4_mob@2x.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                />
+              </picture>
               <h3 class="team-list__title">Михаил Ермаков</h3>
               <p class="team-list__text" lang="en">UI Designer</p>
               <div class="team__soc-block">
