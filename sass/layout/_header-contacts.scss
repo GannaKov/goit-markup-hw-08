@@ -2,26 +2,39 @@
   display: none;
   @include tablet {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     margin-left: auto;
+
+    @include desktop {
+      align-items: center;
+      flex-direction: row;
+    }
   }
 }
 
 .header-contacts__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+  @include desktop {
+    margin-right: 10px;
+  }
 }
 .header-contacts__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
+  @include desktop {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
 }
+
 .header-contacts .link {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   align-items: center;
   color: rgba(117, 117, 117, 1);
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
+
   letter-spacing: 0.02em;
   @include transitions(color);
   &:visited {
@@ -30,6 +43,13 @@
   &:focus,
   &:hover {
     color: var(--accent-color);
+  }
+  @include desktop {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    line-height: 1.14;
+    font-size: 14px;
   }
 }
 /*.header-contacts .link:visited {
