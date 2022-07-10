@@ -251,6 +251,12 @@ body {
   padding: 0;
   border: none;
   background-color: transparent;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu_close_btn:focus, .menu_close_btn:hover {
+  fill: var(--accent-color);
 }
 
 .mobile-menu-wrap {
@@ -288,6 +294,11 @@ body {
 
 .mobile-nav__list .current {
   color: var(--accent-color);
+}
+
+.menu_close_btn:hover + .mobile-nav > .mobile-nav__list .current,
+.menu_close_btn:focus + .mobile-nav > .mobile-nav__list .current {
+  color: rgb(33, 33, 33);
 }
 
 .mobile-nav__item:not(:last-child) {
