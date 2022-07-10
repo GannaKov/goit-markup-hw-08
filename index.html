@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container">
         <nav class="header-nav list">
           <a class="logo header__logo link" href="./index.html"
@@ -68,8 +68,50 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu_open_btn">
+          <svg class="menu_open_icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_open_40px"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobile-menu">
+        <button type="button" class="menu_close_btn">
+          <svg class="menu_close_icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu_close_40px"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a class="link link-current" href="">Студия</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="mobile-contacts list">
+          <li class="mobile-contacts__item">
+            <a
+              class="mobile-contacts__email link"
+              href="mailto:info@devstudio.com"
+            >
+          
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="mobile-contacts__item">
+            <a class="mobile-contacts__tel link" href="tel:+380961111111">
+              
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <main>
       <!-- HERO -->
 

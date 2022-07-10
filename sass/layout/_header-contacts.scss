@@ -1,7 +1,10 @@
 .header-contacts {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
 }
 
 .header-contacts__icon {
