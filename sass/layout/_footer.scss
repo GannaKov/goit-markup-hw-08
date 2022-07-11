@@ -7,30 +7,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  @include tablet {
+    /*!all*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
   @include desktop {
     flex-direction: row;
     align-items: baseline;
   }
 }
 
-.footer-page__tab-block {
-  @include tablet {
-    display: flex;
-
-    margin-bottom: 60px;
-    align-items: baseline;
-  }
-  @include desktop {
-    margin-right: auto;
-    margin-bottom: auto;
-  }
-}
-.footer-ad-wrap {
-  @include desktop {
-    display: flex;
-    align-items: baseline;
-  }
-}
 .footer-address-block__logo {
   margin-bottom: 20px;
 }
@@ -113,9 +102,12 @@
   width: 100%;
   @include tablet {
     max-width: 450px;
+    margin-top: 60px; /*!*/
   }
   @include desktop {
     max-width: 570px;
+    margin-left: auto; /*!*/
+    margin-top: 0;
   }
 }
 .footer-mailing__text {
