@@ -39,10 +39,6 @@
   }
 }
 
-/*.examples-filter__item:not(:last-child) {
-  margin-right: 8px;
-}*/
-
 .examples-filter--first-btn {
   color: var(--btn-text);
 
@@ -51,37 +47,6 @@
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/*.examples-filter__btn {
-  display: inline-block;
-  padding: 6px 22px;
-  height: 38px;
-  color: rgba(33, 33, 33, 1);
-  background-color: rgba(245, 244, 250, 1);
-  border-radius: 4px;
-  border: 1px solid transparent;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-
-  @include transitions(color, background-color, box-shadow);
-  &:hover,
-  &:focus {
-    color: var(--btn-text);
-    background-color: var(--btn-background);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-      0 3px 1px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-.examples-filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-.examples-filter--first-btn {
-  color: var(--btn-text);
-
-  background-color: var(--btn-background);
-} */
 
 /* ---- Карточки работ ---------*/
 
@@ -93,8 +58,6 @@
   /*margin: -15px;*/
 }
 .examples-list__item {
-  /*margin: 15px;
-  flex-basis: calc(100% / 3 - 30px);*/
   @include tablet {
     flex-basis: calc((100% - 30px) / 2);
   }
@@ -120,8 +83,7 @@
   overflow: hidden;
   position: relative;
 }
-.examples-list__wrap {
-}
+
 .examples-list__overlay {
   position: absolute;
   top: 0;
@@ -140,6 +102,10 @@
   }
 }
 .examples-list__wrap-text {
+  @media screen and (max-width: 360px) {
+    font-size: 16px;
+    line-height: 1.56;
+  }
   font-size: 18px;
   line-height: 1.56;
   color: rgba(255, 255, 255, 1);
@@ -163,25 +129,3 @@
   font-size: 16px;
   line-height: 1.88;
 }
-/*.examples-list__wrap-text {
-  position: absolute;
-  top: 0;
-  padding: 77px 24px;
-  height: 100%;
-  font-size: 18px;
-  line-height: 1.56;
-  /*padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
-
-  letter-spacing: 0.03em;*/
-/*color: rgba(255, 255, 255, 1);
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(101%);
-
-  @include transitions(transform);
-  .examples-list__link:hover &,
-  .examples-list__link:focus & {
-    transform: translateY(0);
-  }
-}*/

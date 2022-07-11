@@ -550,17 +550,6 @@ body {
   text-transform: uppercase;
   margin: 0 auto 30px;
   color: rgb(255, 255, 255);
-  /*width: 696px;
-  margin: 0 auto 30px;
-  text-align: center;
-
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-
-  color: rgba(255, 255, 255, 1);*/
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -730,10 +719,6 @@ body {
   }
 }
 
-.team__soc-block {
-  /* display: block;
-  /*padding: 0 122px;*/
-}
 .team__soc-block .soc-list {
   justify-content: center;
 }
@@ -757,8 +742,6 @@ body {
 }
 
 .clients-list {
-  /*display: flex;
-  margin: 0 -15px 0;*/
   gap: 30px;
   width: 100%;
   display: flex;
@@ -799,7 +782,6 @@ body {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   outline: transparent;
-  /* transition: var(--transition-color), var(--transition-border-color);*/
 }
 .clients-list__link:hover, .clients-list__link:focus {
   color: var(--accent-color);
@@ -1008,61 +990,6 @@ body {
   margin-left: 10px;
 }
 
-/* --- Footer join + soc links ---- */
-/* outline: 1px solid green;*/
-/* ---mailing block----*/
-/*.footer-mailing__text {
-  margin-bottom: 20px;
-  font-weight: 700;
-
-  line-height: 1.14;
-
-  text-transform: uppercase;
-  color: var(--btn-text);
-}
-.footer-mailing__field {
-  display: flex;
-}
-
-.footer-mailing__imput {
-  padding-left: 16px;
-  margin-right: 12px;
-  width: 358px;
-  height: 50px;
-
-  line-height: 1.25;
-  font-size: 16px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.6);
-  outline: transparent;
-
-  @include transitions(border-color);
-  &:focus {
-    color: rgba(255, 255, 255, 1);
-
-    border-color: rgba(255, 255, 255, 1);
-  }
-
-  &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
-
-    color: rgba(255, 255, 255, 0.6);
-  }
-}
-
-.footer-mailing__btn {
-  outline: 1px solid transparent;
-}
-.footer-mailing__icon {
-  margin-left: 10px;
-}
-*/
 .examples-filter {
   display: flex;
   flex-wrap: wrap;
@@ -1106,9 +1033,6 @@ body {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-/*.examples-filter__item:not(:last-child) {
-  margin-right: 8px;
-}*/
 .examples-filter--first-btn {
   color: var(--btn-text);
   background-color: var(--btn-background);
@@ -1116,37 +1040,6 @@ body {
   border-radius: 4px;
 }
 
-/*.examples-filter__btn {
-  display: inline-block;
-  padding: 6px 22px;
-  height: 38px;
-  color: rgba(33, 33, 33, 1);
-  background-color: rgba(245, 244, 250, 1);
-  border-radius: 4px;
-  border: 1px solid transparent;
-  font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-
-  @include transitions(color, background-color, box-shadow);
-  &:hover,
-  &:focus {
-    color: var(--btn-text);
-    background-color: var(--btn-background);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
-      0 3px 1px 0 rgba(0, 0, 0, 0.1);
-  }
-}
-.examples-filter__item:not(:last-child) {
-  margin-right: 8px;
-}
-.examples-filter--first-btn {
-  color: var(--btn-text);
-
-  background-color: var(--btn-background);
-} */
 /* ---- Карточки работ ---------*/
 .examples-list {
   display: flex;
@@ -1156,10 +1049,6 @@ body {
   /*margin: -15px;*/
 }
 
-.examples-list__item {
-  /*margin: 15px;
-  flex-basis: calc(100% / 3 - 30px);*/
-}
 @media screen and (min-width: 768px) {
   .examples-list__item {
     flex-basis: calc((100% - 30px) / 2);
@@ -1212,6 +1101,12 @@ body {
   color: rgb(255, 255, 255);
   letter-spacing: 0.03em;
 }
+@media screen and (max-width: 360px) {
+  .examples-list__wrap-text {
+    font-size: 16px;
+    line-height: 1.56;
+  }
+}
 
 .examples-list__content {
   padding: 20px 24px;
@@ -1231,28 +1126,6 @@ body {
   line-height: 1.88;
 }
 
-/*.examples-list__wrap-text {
-  position: absolute;
-  top: 0;
-  padding: 77px 24px;
-  height: 100%;
-  font-size: 18px;
-  line-height: 1.56;
-  /*padding: 63px 24px;
-  font-size: 18px;
-  line-height: 1.56;
-
-  letter-spacing: 0.03em;*/
-/*color: rgba(255, 255, 255, 1);
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(101%);
-
-  @include transitions(transform);
-  .examples-list__link:hover &,
-  .examples-list__link:focus & {
-    transform: translateY(0);
-  }
-}*/
 .modal {
   position: absolute;
   padding: 40px;
