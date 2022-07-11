@@ -10,15 +10,12 @@
 
   @include mobile {
     max-width: 480px;
-    outline: 1px dashed tomato;
   }
 
   @include tablet {
     max-width: 768px;
-    outline: 1px dashed greenyellow;
   }
   @include desktop {
     max-width: 1200px;
-    outline: 1px dashed blueviolet;
   }
 }

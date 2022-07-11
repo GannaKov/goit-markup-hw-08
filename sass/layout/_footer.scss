@@ -4,7 +4,6 @@
   padding: 60px 0;
 }
 .footer-page__blocks {
-  outline: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +16,7 @@
 .footer-page__tab-block {
   @include tablet {
     display: flex;
-    outline: 1px solid yellow;
+
     margin-bottom: 60px;
     align-items: baseline;
   }
@@ -26,13 +25,17 @@
     margin-bottom: auto;
   }
 }
-
+.footer-ad-wrap {
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
+}
 .footer-address-block__logo {
   margin-bottom: 20px;
 }
 
 .footer-block__address {
-  outline: 1px solid red;
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
@@ -40,10 +43,10 @@
   @include tablet {
     margin-bottom: 0;
     margin-right: 165px;
-    @include desktop {
-      margin-right: 70px;
-      align-items: flex-start;
-    }
+  }
+  @include desktop {
+    margin-right: 70px;
+    align-items: flex-start;
   }
 }
 .footer-contacts {
@@ -83,7 +86,7 @@
 }
 .footer-block__social {
   margin-bottom: 60px;
-  outline: 1px solid red;
+
   @include tablet {
     margin-bottom: 0;
   }
@@ -107,8 +110,6 @@
 }
 
 .footer-block__mailing {
-  outline: 1px solid red;
-
   width: 100%;
   @include tablet {
     max-width: 450px;
