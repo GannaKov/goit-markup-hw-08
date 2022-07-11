@@ -85,6 +85,10 @@
 }
 
 .examples-list__overlay {
+  @media screen and (max-width: 360px) {
+    align-items: flex-start;
+    overflow-y: scroll;
+  }
   position: absolute;
   top: 0;
   height: 100%;
@@ -102,10 +106,6 @@
   }
 }
 .examples-list__wrap-text {
-  @media screen and (max-width: 360px) {
-    font-size: 16px;
-    line-height: 1.56;
-  }
   font-size: 18px;
   line-height: 1.56;
   color: rgba(255, 255, 255, 1);

@@ -1091,6 +1091,12 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 360px) {
+  .examples-list__overlay {
+    align-items: flex-start;
+    overflow-y: scroll;
+  }
+}
 .examples-list__link:hover .examples-list__overlay, .examples-list__link:focus .examples-list__overlay {
   transform: translateY(0);
 }
@@ -1100,12 +1106,6 @@ body {
   line-height: 1.56;
   color: rgb(255, 255, 255);
   letter-spacing: 0.03em;
-}
-@media screen and (max-width: 360px) {
-  .examples-list__wrap-text {
-    font-size: 16px;
-    line-height: 1.56;
-  }
 }
 
 .examples-list__content {
