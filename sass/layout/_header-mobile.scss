@@ -28,6 +28,9 @@
   }
 }
 .mobile-menu {
+  @media screen and (max-height: 560px) {
+    overflow-y: scroll;
+  }
   display: flex;
   flex-direction: column;
   outline: 1px solid green;
@@ -37,6 +40,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
+
   z-index: 2;
   padding: 10px 15px 48px 40px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
