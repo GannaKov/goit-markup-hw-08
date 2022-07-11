@@ -63,6 +63,10 @@ body {
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   /*width: 1200px;
   padding: 0 15px;
