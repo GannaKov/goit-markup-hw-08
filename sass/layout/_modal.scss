@@ -57,6 +57,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
+  fill: rgba(33, 33, 33, 1);
   @include transitions(fill);
   &:focus,
   &:hover {

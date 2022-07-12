@@ -403,6 +403,7 @@ body.modal-open {
   padding: 0;
   border: none;
   background-color: transparent;
+  fill: rgb(33, 33, 33);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -414,7 +415,6 @@ body.modal-open {
 .mobile-menu {
   display: flex;
   flex-direction: column;
-  outline: 1px solid green;
   position: fixed;
   background-color: rgb(255, 255, 255);
   top: 0;
@@ -940,15 +940,13 @@ body.modal-open {
 @media screen and (min-width: 768px) {
   .footer-block__mailing {
     max-width: 450px;
-    margin-top: 60px;
-    /*!*/
+    margin-top: 60px; /*!*/
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-block__mailing {
     max-width: 570px;
-    margin-left: auto;
-    /*!*/
+    margin-left: auto; /*!*/
     margin-top: 0;
   }
 }
@@ -1197,6 +1195,7 @@ body.modal-open {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
+  fill: rgb(33, 33, 33);
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
