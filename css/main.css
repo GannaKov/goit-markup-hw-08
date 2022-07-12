@@ -1192,7 +1192,6 @@ body.modal-open {
   right: 8px;
   align-items: center;
   justify-content: center;
-  fill: rgb(33, 33, 33);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
@@ -1267,6 +1266,7 @@ body.modal-open {
 
 .modal-form__icon {
   position: absolute;
+  fill: rgb(33, 33, 33);
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
