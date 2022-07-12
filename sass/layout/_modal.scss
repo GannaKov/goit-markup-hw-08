@@ -65,6 +65,14 @@
     fill: var(--accent-color);
   }
 }
+.modal__icon-close {
+  fill: rgba(33, 33, 33, 1);
+  @include transitions(fill);
+  &:focus,
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
 
 .is-hidden {
   opacity: 0;
@@ -126,7 +134,7 @@
 }
 .modal-form__icon {
   position: absolute;
-  fill: rgba(33, 33, 33, 1);
+
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
