@@ -79,6 +79,9 @@
   @include tablet {
     margin-bottom: 0;
   }
+  @include desktop {
+    margin-right: auto;
+  }
 }
 .footer-mailing__field {
   @include desktop {
@@ -106,7 +109,7 @@
   }
   @include desktop {
     max-width: 570px;
-    margin-left: auto; /*!*/
+    // margin-left: auto; /*!*/
     margin-top: 0;
   }
 }

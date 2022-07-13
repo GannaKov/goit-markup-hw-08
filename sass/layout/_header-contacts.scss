@@ -52,3 +52,11 @@
     font-size: 14px;
   }
 }
+@include tablet {
+  .header-contacts__email {
+    padding-top: 20px;
+  }
+  .header-contacts__tel {
+    padding-bottom: 20px;
+  }
+}
