@@ -58,13 +58,15 @@
   align-items: center;
   justify-content: center;
   fill: rgba(33, 33, 33, 1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  @include transitions(fill);
+  @include transitions(border-color);
   &:focus,
   &:hover {
-    fill: var(--accent-color);
+    border-color: var(--accent-color);
   }
 }
 .modal__icon-close {

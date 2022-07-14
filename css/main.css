@@ -181,6 +181,7 @@ body.modal-open {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .soc-list__link:hover, .soc-list__link:focus {
   background-color: var(--accent-color);
@@ -196,6 +197,7 @@ body.modal-open {
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .soc-list__link--team:hover, .soc-list__link--team:focus {
   color: rgb(255, 255, 255);
@@ -289,6 +291,7 @@ body.modal-open {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 
 .header-nav__list .link:focus,
@@ -304,6 +307,7 @@ body.modal-open {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 
 .header-nav__list .link:focus,
@@ -359,6 +363,7 @@ body.modal-open {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .header-contacts .link:visited {
   color: rgb(117, 117, 117);
@@ -394,6 +399,7 @@ body.modal-open {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .menu_open_btn:focus, .menu_open_btn:hover {
   fill: var(--accent-color);
@@ -414,6 +420,7 @@ body.modal-open {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .menu_close_btn:focus, .menu_close_btn:hover {
   fill: var(--accent-color);
@@ -435,6 +442,7 @@ body.modal-open {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 @media screen and (max-height: 560px) {
   .mobile-menu {
@@ -447,6 +455,11 @@ body.modal-open {
 @media screen and (max-height: 560px) {
   .mobile-menu {
     padding: 10px 15px 65px 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
   }
 }
 
@@ -602,6 +615,7 @@ body.modal-open {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
   margin: 0 auto;
 }
 .hero__btn:hover, .hero__btn:focus {
@@ -811,6 +825,7 @@ body.modal-open {
   transition-property: color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
   display: flex;
   height: 92px;
   color: rgb(175, 177, 184);
@@ -898,6 +913,7 @@ body.modal-open {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .footer-contacts__adress:hover, .footer-contacts__adress:focus {
   color: var(--accent-color);
@@ -911,6 +927,7 @@ body.modal-open {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .footer-contacts__email:hover, .footer-contacts__email:focus,
 .footer-contacts__tel:hover,
@@ -998,6 +1015,7 @@ body.modal-open {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .footer-mailing__imput:focus {
   color: rgb(255, 255, 255);
@@ -1061,6 +1079,7 @@ body.modal-open {
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .examples-filter__btn:hover, .examples-filter__btn:focus {
   color: var(--btn-text);
@@ -1104,6 +1123,7 @@ body.modal-open {
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .examples-list__link:hover, .examples-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1126,6 +1146,7 @@ body.modal-open {
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 @media screen and (max-width: 360px) {
   .examples-list__overlay {
@@ -1213,15 +1234,18 @@ body.modal-open {
   align-items: center;
   justify-content: center;
   fill: rgb(33, 33, 33);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: transparent;
-  transition-property: fill;
+  transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .modal__close-btn:focus, .modal__close-btn:hover {
-  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .modal__icon-close {
@@ -1229,6 +1253,7 @@ body.modal-open {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .modal__icon-close:focus, .modal__icon-close:hover {
   fill: var(--accent-color);
@@ -1275,6 +1300,7 @@ body.modal-open {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .modal-form__input:focus {
   border-color: var(--accent-color);
@@ -1303,6 +1329,7 @@ body.modal-open {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .modal-form__input:focus + .modal-form__icon {
   fill: var(--accent-color);
@@ -1319,6 +1346,7 @@ body.modal-open {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .modal-form__comment-area::placeholder {
   font-size: 14px;
@@ -1384,6 +1412,7 @@ body.modal-open {
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
 }
 .checkbox__check:focus + .checkbox__text > .checkbox__input {
   border-color: var(--accent-color);
@@ -1405,6 +1434,7 @@ body.modal-open {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 1000ms;
   margin: 0 auto;
 }
 .modal__submit-btn:focus, .modal__submit-btn:hover {
