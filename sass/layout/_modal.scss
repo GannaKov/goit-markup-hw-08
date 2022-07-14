@@ -116,8 +116,9 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   @include transitions(border-color);
-
-  &:focus {
+  cursor: pointer;
+  &:focus,
+  &:hover {
     border-color: var(--accent-color);
     outline: transparent;
   }
@@ -145,7 +146,8 @@
   transform: translateY(-50%);
   @include transitions(fill);
 
-  .modal-form__input:focus + & {
+  .modal-form__input:focus + &,
+  .modal-form__input:hover + & {
     fill: var(--accent-color);
   }
 }
@@ -170,7 +172,8 @@
     }
   }
 
-  &:focus {
+  &:focus,
+  &:hover {
     border-color: var(--accent-color);
     outline: transparent;
   }
@@ -216,7 +219,8 @@
   border: 2px solid rgba(33, 33, 33, 1);
   @include transitions(border-color);
 
-  .checkbox__check:focus + .checkbox__text > & {
+  .checkbox__check:focus + .checkbox__text > &,
+  .checkbox__check:hover + .checkbox__text > & {
     border-color: var(--accent-color);
   }
 
