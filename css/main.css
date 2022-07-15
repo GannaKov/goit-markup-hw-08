@@ -62,13 +62,15 @@ body {
   font-size: 14px;
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
 }
-@media screen and (max-width: 1199px) {
-  body.no-scroll, body.modal-open {
-    overflow: hidden;
-    position: fixed;
-    left: 0;
-    right: 0;
-  }
+body.no-scroll {
+  overflow: hidden;
+  position: fixed;
+}
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
 }
 
 .container {
@@ -1198,9 +1200,6 @@ body {
     position: absolute;
     width: 528px;
     height: 581px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 300ms linear;
   }
   .backdrop.is-hidden .modal {
