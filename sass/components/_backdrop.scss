@@ -8,12 +8,12 @@
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear, visibility 500ms linear;
   /*без этого не работает обратная анимация*/
-  // overflow-y: scroll;
+  overflow-y: scroll;
 
   @include tablet {
     padding: 208px 159px;
   }
   // @include desktop {
-  //   padding: 221px 536px;
+  //   overflow-y: ;
   // }
 }
