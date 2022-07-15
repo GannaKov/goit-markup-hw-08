@@ -3,10 +3,17 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   font-family: "Roboto", "Verdana", "Tahoma", sans-serif;
-}
-body.no-scroll {
-  overflow: hidden;
-}
-body.modal-open {
-  overflow: hidden;
+  // @media screen and (max-width: 1199px) {
+  &.no-scroll {
+    overflow: hidden;
+    position: fixed;
+
+    // top: 0px;
+  }
+  &.modal-open {
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
 }
