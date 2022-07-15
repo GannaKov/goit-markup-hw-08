@@ -212,12 +212,6 @@ body.modal-open {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms linear, visibility 500ms linear;
   /*без этого не работает обратная анимация*/
-  overflow-y: scroll;
-}
-@media screen and (min-width: 768px) {
-  .backdrop {
-    padding: 93px 15px;
-  }
 }
 @media screen and (min-width: 768px) {
   .backdrop {
